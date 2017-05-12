@@ -31,4 +31,13 @@ typings/
 upload/
 
 ###############
- 
+.vscode 
+test
+.npmignore
+.gitignore
+run.js
+tsconfig.json
+tslint.json
+yarn.lock
+src
+*.map
