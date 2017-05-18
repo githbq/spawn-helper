@@ -61,12 +61,12 @@ export default {
             })
             child.stdout.on('data', function (chunk) {
                 const msg = chunk.toString()
-                options.preventDefault !== true && console.log(color.yellow(' ' + msg))
+                options.preventDefault !== true && console.log(color.yellow(msg))
                 options.onStdout && options.onStdout(msg)
             })
             child.stderr.on('data', function (chunk) {
                 const msg = chunk.toString()
-                options.preventDefault !== true && console.log(color.yellowBright(' ' + msg))
+                options.preventDefault !== true && console.log(color.yellowBright(msg))
                 options.onStderr && options.onStderr(msg)
             })
         })
