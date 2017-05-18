@@ -1,6 +1,6 @@
 {
     "name": "spawn-helper",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "spawn-helper2",
     "main": "build/index.js",
     "scripts": {
@@ -23,6 +23,7 @@
     },
     "homepage": "git@github.com:githbq/spawn-helper.git#readme",
     "dependencies": {
+        "cli-color": "^1.2.0",
         "cross-spawn-async": "^2.2.5",
         "tslib": "^1.6.1"
     },

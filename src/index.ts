@@ -1,6 +1,7 @@
 //跨平台 执行命令
 import * as spawn from 'cross-spawn-async'
 import * as childProcess from 'child_process'
+import * as  color from 'cli-color'
 const { exec } = childProcess
 
 export default {
@@ -50,7 +51,7 @@ export default {
      */
     exec(cmd: string, options: any = {}) {
         return new Promise((resolve, reject) => {
-            var child = exec(cmd, options, function (err, stdout, stderr) {
+            let child = exec(cmd, options, function (err, stdout, stderr) {
                 if (err) {
                     reject(err)
                 }
@@ -59,12 +60,14 @@ export default {
                 }
             })
             child.stdout.on('data', function (chunk) {
-                options.preventDefault !== true && process.stdout.write(chunk)
-                options.onStdout && options.onStdout(chunk.toString())
+                const msg = chunk.toString()
+                options.preventDefault !== true && console.log(color.yellow(' ' + msg))
+                options.onStdout && options.onStdout(msg)
             })
             child.stderr.on('data', function (chunk) {
-                options.preventDefault !== true && process.stdout.write(chunk)
-                options.onStderr && options.onStderr(chunk.toString())
+                const msg = chunk.toString()
+                options.preventDefault !== true && console.log(color.yellowBright(' ' + msg))
+                options.onStderr && options.onStderr(msg)
             })
         })
     }
