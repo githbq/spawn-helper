@@ -1,5 +1,5 @@
 //跨平台 执行命令
-import * as spawn from 'cross-spawn-async'
+import * as spawn from 'cross-spawn'
 import * as childProcess from 'child_process'
 import * as  color from 'cli-color'
 const { exec } = childProcess
