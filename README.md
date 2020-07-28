@@ -1,4 +1,4 @@
-#  模块名称 
+#  spawn-helper
 ## 命令操作辅助工具
 1. yarn add spawn-helper
 

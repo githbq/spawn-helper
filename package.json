@@ -1,6 +1,6 @@
 {
     "name": "spawn-helper",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "spawn-helper2",
     "main": "build/index.js",
     "scripts": {
