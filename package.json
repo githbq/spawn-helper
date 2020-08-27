@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "spawn-helper",
     "main": "build/index.js",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
     "scripts": {
         "start": "node run",
         "test": "mocha src/**/*.test.ts",
