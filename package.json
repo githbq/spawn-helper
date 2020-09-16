@@ -1,6 +1,6 @@
 {
     "name": "spawn-helper",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "spawn-helper",
     "main": "build/index.js",
     "publishConfig": {
@@ -18,28 +18,29 @@
         "type": "git",
         "url": "git@github.com:githbq/spawn-helper.git"
     },
-    "keywords": ["typescript", "spawn-helper"],
+    "keywords": [
+        "typescript",
+        "spawn-helper",
+        "exec"
+    ],
     "author": "hubiqing",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/githbq/hbq-module-boilerplate.git"
-    },
     "homepage": "git@github.com:githbq/spawn-helper.git#readme",
     "dependencies": {
         "cli-color": "^1.2.0",
         "cross-spawn": "^7.0.3",
-        "tslib": "^1.6.1"
+        "tslib": "^2.0.1"
     },
     "devDependencies": {
         "@types/chai": "^3.5.2",
         "@types/mocha": "^2.2.41",
-        "@types/node": "^6.0.48",
+        "@types/node": "^14.10.2",
         "chai": "^3.5.0",
         "mocha": "^3.3.0",
         "rimraf": "^2.6.1",
-        "ts-node": "^3.0.2",
+        "ts-node": "^9.0.0",
         "tslint": "^5.1.0",
-        "typescript": "^2.3.2"
+        "typescript": "^4.0.2"
     },
     "node": ">=7.6"
 }

@@ -26,10 +26,10 @@ export default {
      * @param {命令名称} name 
      * @param {cwd} options 
      */
-    run(name, options) {
+    run(name, deps, options) {
         return new Promise((resolve, reject) => {
             let result = this.create({
-                deps: options.deps,
+                deps,
                 cmd: name,
                 spawnOptions: { cwd: options.cwd },
                 stdoutCallback: (data) => {
